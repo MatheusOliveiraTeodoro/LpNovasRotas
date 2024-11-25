@@ -53,7 +53,7 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>} // Borda preenchida
                 />
               }
-              label="Selecionar"
+              label="escolher"
             />
           </div>
 
@@ -71,7 +71,7 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>}
                 />
               }
-              label="Selecionar"
+              label="escolher"
             />
           </div>
 
@@ -89,7 +89,7 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>}
                 />
               }
-              label="Selecionar"
+              label="escolher"
             />
           </div>
         </div>
