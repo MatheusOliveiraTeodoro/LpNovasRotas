@@ -18,6 +18,16 @@ const ModalFilhote = ({ closeModal }) => {
       return;
     }
 
+    const handlePesoChange = (e) => {
+      // Substitui vírgula por ponto para garantir que o valor seja interpretado corretamente
+      const pesoComPonto = e.target.value.replace(',', '.');
+    
+      // Para garantir que o valor inserido seja um número válido
+      if (!isNaN(pesoComPonto) || pesoComPonto === "") {
+        setPeso(pesoComPonto);
+      }
+    };
+
     // Calculando pp1
     const pp1 = -0.87 * (pesoAtual / pesoIdeal);
     console.log("pp1:", pp1); // Log para verificar o valor de pp1
@@ -101,7 +111,7 @@ const ModalFilhote = ({ closeModal }) => {
           className="mb-4"
         />
 
-        <Button variant="contained" color="primary" fullWidth onClick={handleCalcular}>
+        <Button variant="contained" color="error" fullWidth onClick={handleCalcular}>
           Calcular
         </Button>
 
@@ -120,7 +130,7 @@ const ModalFilhote = ({ closeModal }) => {
         )}
 
         <div className="text-center mt-6">
-          <Button variant="outlined" color="secondary" onClick={closeModal}>
+          <Button variant="outlined" color="error" onClick={closeModal}>
             Fechar
           </Button>
         </div>

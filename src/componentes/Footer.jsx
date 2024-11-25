@@ -15,24 +15,24 @@ const Footer = () => {
         <footer className="bg-gray-200">
             <div className="container mx-auto px-4 pb-5">
                 {/* Seção de ícones com frases */}
-                <div className="flex flex-wrap justify-center sm:justify-start py-4 px-4 pl-10">
-                <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
-                    <span><PiBowlFoodDuotone className="text-2xl" /></span>
-                    <span className="ml-2 text-gray-700 text-xs font-semibold">Produtos frescos todo dia</span>
+                <div className="flex flex-wrap justify-center py-4 px-4">
+                    <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
+                        <span><PiBowlFoodDuotone className="text-2xl" /></span>
+                        <span className="ml-2 text-gray-700 text-xs font-semibold">Produtos frescos todo dia</span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
+                        <span><a href="https://wa.me/message/O7OXIRLLBCPLM1" target="_blank"><FaWhatsappSquare className="text-[#25d366] text-2xl" /></a></span>
+                        <span className="ml-2 text-gray-700 text-xs font-semibold">Atendimento personalizado via Whatsapp </span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
+                        <span><CiDiscount1 className="text-2xl" /></span>
+                        <span className="ml-2 text-gray-700 text-xs font-semibold">Desconto no plano mensal</span>
+                    </div>
+                    <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
+                        <span><RiMoneyDollarCircleLine className="text-2xl" /></span>
+                        <span className="ml-2 text-gray-700 text-xs font-semibold">Preços justos e acessíveis</span>
+                    </div>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
-                    <span><a href="https://wa.me/message/O7OXIRLLBCPLM1" target="_blank"><FaWhatsappSquare className="text-[#25d366] text-2xl" /></a></span>
-                    <span className="ml-2 text-gray-700 text-xs font-semibold">Atendimento personalizado via Whatsapp </span>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
-                    <span><CiDiscount1 className="text-2xl" /></span>
-                    <span className="ml-2 text-gray-700 text-xs font-semibold">Desconto no plano mensal</span>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center border-b border-black/20 pb-2 mb-2 sm:mr-8 sm:mb-0">
-                    <span><RiMoneyDollarCircleLine className="text-2xl" /></span>
-                    <span className="ml-2 text-gray-700 text-xs font-semibold">Preços justos e acessíveis</span>
-                </div>
-            </div>
 
 
                 {/* Seção com o endereço e email */}

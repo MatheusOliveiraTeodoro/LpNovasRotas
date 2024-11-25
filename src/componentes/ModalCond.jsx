@@ -27,9 +27,13 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
   };
   
   const handlePesoChange = (e) => {
-    // Substituindo a vírgula por ponto no valor de peso
+    // Substitui vírgula por ponto para garantir que o valor seja interpretado corretamente
     const pesoComPonto = e.target.value.replace(',', '.');
-    setPeso(pesoComPonto);
+  
+    // Para garantir que o valor inserido seja um número válido
+    if (!isNaN(pesoComPonto) || pesoComPonto === "") {
+      setPeso(pesoComPonto);
+    }
   };
 
   const handleCalcular = () => {
@@ -48,7 +52,7 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
         </div>
 
         <TextField
-          label="Peso do Pet (kg)"
+          label="Peso IDEAL do Pet (kg)"
           type="number"
           variant="outlined"
           fullWidth
@@ -70,7 +74,7 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
         
         <Button
           variant="contained"
-          color="primary"
+          color="error"
           fullWidth
           onClick={handleCalcular}
           disabled={!peso || Object.values(condicoes).every(c => !c)}
@@ -80,7 +84,7 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
 
         {/* Responsividade do botão "Fechar" */}
         <div className="flex justify-end sm:justify-start mt-4">
-          <Button onClick={closeModal} variant="outlined" color="secondary" fullWidth>
+          <Button onClick={closeModal} variant="outlined" color="error" fullWidth>
             Fechar
           </Button>
         </div>

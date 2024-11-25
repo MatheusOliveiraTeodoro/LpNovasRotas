@@ -49,8 +49,8 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checked={idade === "filhote"}
                   onChange={() => handleIdadeSelect("filhote")}
                   color="primary"
-                  icon={<span className="w-8 h-8 rounded-full border-2 border-blue-500"></span>} // Estilo de borda arredondada
-                  checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>} // Borda preenchida
+                  icon={<span className="w-8 h-8 rounded-full border-2 border-black"></span>} // Estilo de borda arredondada
+                  checkedIcon={<span className="w-8 h-8 rounded-full bg-[#7f1d1d]"></span>} // Borda preenchida
                 />
               }
               label="escolher"
@@ -67,8 +67,8 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checked={idade === "adulto"}
                   onChange={() => handleIdadeSelect("adulto")}
                   color="primary"
-                  icon={<span className="w-8 h-8 rounded-full border-2 border-blue-500"></span>}
-                  checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>}
+                  icon={<span className="w-8 h-8 rounded-full border-2 border-black"></span>}
+                  checkedIcon={<span className="w-8 h-8 rounded-full bg-[#7f1d1d]"></span>}
                 />
               }
               label="escolher"
@@ -85,8 +85,8 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
                   checked={idade === "senior"}
                   onChange={() => handleIdadeSelect("senior")}
                   color="primary"
-                  icon={<span className="w-8 h-8 rounded-full border-2 border-blue-500"></span>}
-                  checkedIcon={<span className="w-8 h-8 rounded-full bg-blue-500"></span>}
+                  icon={<span className="w-8 h-8 rounded-full border-2 border-black"></span>}
+                  checkedIcon={<span className="w-8 h-8 rounded-full bg-[#7f1d1d]"></span>}
                 />
               }
               label="escolher"
@@ -96,7 +96,7 @@ const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirM
 
         <div className="text-center">
           <button
-            className={`w-full py-2 px-4 ${!idade || loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500'} text-white font-bold rounded-lg`}
+            className={`w-full py-2 px-4 ${!idade || loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#7f1d1d]'} text-white font-bold rounded-lg`}
             disabled={!idade || loading}
             onClick={handleProseguir}
           >

@@ -186,7 +186,7 @@ const Calculo = () => {
       </h1>
       <div className="flex justify-center calcbtn">
         <Button variant="contained" onClick={openModalIdade}>
-          Calcular a quantidade de comida diária
+          Calcular
         </Button>
       </div>
 

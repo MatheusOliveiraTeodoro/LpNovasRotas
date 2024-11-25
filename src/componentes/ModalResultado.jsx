@@ -36,7 +36,7 @@ const ModalResultados = ({ closeModal, resultados, kcalPorDia, condicaoMensagem,
         </div>
 
         <div className="text-center mt-6">
-          <Button variant="contained" color="primary" onClick={closeModal}>
+          <Button variant="contained" color="error" onClick={closeModal}>
             Fechar
           </Button>
         </div>
