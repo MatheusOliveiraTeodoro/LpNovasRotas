@@ -25,6 +25,12 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
       [event.target.name]: event.target.checked,
     });
   };
+  
+  const handlePesoChange = (e) => {
+    // Substituindo a vírgula por ponto no valor de peso
+    const pesoComPonto = e.target.value.replace(',', '.');
+    setPeso(pesoComPonto);
+  };
 
   const handleCalcular = () => {
     calcular(peso, condicoes);
@@ -47,7 +53,7 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
           variant="outlined"
           fullWidth
           value={peso}
-          onChange={(e) => setPeso(e.target.value)}
+          onChange={handlePesoChange}
           className="mb-4"
         />
 
@@ -61,19 +67,23 @@ const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
             />
           ))}
         </div>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            onClick={handleCalcular}
-            disabled={!peso || Object.values(condicoes).every(c => !c)}
-          >
-            Calcular
-          </Button>
+        
+        <Button
+          variant="contained"
+          color="primary"
+          fullWidth
+          onClick={handleCalcular}
+          disabled={!peso || Object.values(condicoes).every(c => !c)}
+        >
+          Calcular
+        </Button>
 
-          <div className="flex justify-between items-center fecharbtn">
-            <Button onClick={closeModal} variant="outlined" color="secondary">Fechar</Button>
-          </div>
+        {/* Responsividade do botão "Fechar" */}
+        <div className="flex justify-end sm:justify-start mt-4">
+          <Button onClick={closeModal} variant="outlined" color="secondary" fullWidth>
+            Fechar
+          </Button>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 
 // Ícones ou imagens representando cada categoria
 import FilhoteIcon from "../assets/filhote.jfif"; 
-import AdultoIcon from "../assets/adulto.png";
+import AdultoIcon from "../assets/golden-adulto.jpeg";
 import SeniorIcon from "../assets/senior.jpg";
 
 const ModalIdade = ({ closeModal, setIdadeEscolhida, abrirModalCondicoes, abrirModalFilhote }) => {
