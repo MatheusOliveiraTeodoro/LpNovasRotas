@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Button, TextField, Card, CardContent, Typography } from "@mui/material";
+import { IoIosCloseCircle } from "react-icons/io";
 
-const ModalFilhote = ({ closeModal }) => {
+const ModalFilhote = ({ closeModal, voltarModalIdade }) => {
   const [pesoAtual, setPesoAtual] = useState("");
   const [pesoIdeal, setPesoIdeal] = useState("");
   const [resultado, setResultado] = useState(null);
@@ -85,6 +86,9 @@ const ModalFilhote = ({ closeModal }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
       <div className="bg-white rounded-lg p-6 w-full max-w-lg max-h-[70vh] overflow-y-auto">
+      <div className="flex justify-between items-center">
+      <IoIosCloseCircle onClick={closeModal} className="text-2xl text-red-800 sticky ml-auto" />
+      </div>
         <h2 className="text-2xl font-bold text-center mb-4">Cálculo para Filhotes</h2>
         <p className="mb-4 text-center">
           São considerados nesta categoria cães até 12 meses de idade.
@@ -130,8 +134,8 @@ const ModalFilhote = ({ closeModal }) => {
         )}
 
         <div className="text-center mt-6">
-          <Button variant="outlined" color="error" onClick={closeModal}>
-            Fechar
+          <Button variant="contained" color="success" href="https://wa.me/message/O7OXIRLLBCPLM1" target="_blank">
+            Comprar
           </Button>
         </div>
       </div>

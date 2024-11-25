@@ -4,7 +4,7 @@ import { Button, Checkbox, FormControlLabel, TextField } from "@mui/material";
 const ModalCondicoes = ({ closeModal, calcular, setCondicaoSelecionada }) => {
   const [peso, setPeso] = useState("");
   const [condicoes, setCondicoes] = useState({
-    saudavel: false,
+    saudável: false,
     renal: false,
     gastrointestinais: false,
     hepatopatia: false,

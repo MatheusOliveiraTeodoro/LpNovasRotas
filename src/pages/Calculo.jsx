@@ -96,7 +96,7 @@ const Calculo = () => {
           { nome: "Peixe Low Fat", parametro: 83.2 },
           { nome: "Frango Low Fat Grain Free", parametro: 90 }
         ];
-      } else if (condicoes.saudavel) {
+      } else if (condicoes.saudável) {
         condicaoMensagem = "DIETAS DE MANUTENÇÃO";
         dietas = [
           { nome: "Frango Adulto Tradicional", parametro: 130.4 },
