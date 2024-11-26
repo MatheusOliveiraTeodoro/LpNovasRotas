@@ -181,7 +181,7 @@ const Calculo = () => {
       </div>
 
     <div className="bg-blue-100 h-96 py-10 px-6">
-      <h1 className="text-3xl font-bold text-center mb-10 relative text-white space-x-2 text-shadow font-poppins whitespace-nowrap max-w-full">
+      <h1 className="text-3xl font-bold text-center mb-10 relative text-white space-x-2 text-shadow font-poppins">
         Saiba qual é a quantidade ideal de alimento que seu pet deve ingerir por dia.
       </h1>
       <div className="flex justify-center calcbtn">
