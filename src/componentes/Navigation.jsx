@@ -18,7 +18,7 @@
       <nav className="w-full flex items-center justify-between px-6 py-4 bg-red-900 border-b border-black/30 z-10 fixed top-0 left-0">
         {/* Logo da empresa */}
         <Link to="/" className="flex items-center mr-4">
-          <img src={LogoBFP} alt="Logo da Empresa" className="h-[5rem] sm:h-20 w-auto" />
+          <img src={LogoBFP} alt="Logo da Empresa" className="h-[4rem] sm:h-20 w-auto" />
         </Link>
 
         {/* Menu Hamburguer para dispositivos móveis */}
