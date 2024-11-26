@@ -9,7 +9,7 @@ const ModalResultados = ({ closeModal, resultados, kcalPorDia, condicaoMensagem,
       <div className="bg-white rounded-lg p-6 w-full max-w-lg max-h-[70vh] overflow-y-auto">
         <div className="flex justify-between items-center">
         <FaArrowAltCircleLeft onClick={voltarModalCondicoes} className="" />
-        <IoIosCloseCircle onClick={closeModal} className="text-2xl text-red-800 absolute right-[25rem]" />
+        <IoIosCloseCircle onClick={closeModal} className="text-2xl text-red-800 absolute ml-[26rem]" />
         </div>
         <h2 className="text-2xl font-bold text-center mb-4">Resultado do Cálculo </h2>
 
