@@ -69,13 +69,13 @@ const Navigation = () => {
 
         {/* Ícones sociais no menu horizontal para telas grandes */}
         <div className="flex space-x-6">
-          <Link to="https://www.facebook.com" target="_blank">
+          <Link to="https://www.facebook.com/bestforpetoficial?mibextid=LQQJ4d&rdid=z1KW9QlbjB2kxNSh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1gh83cNnqjXtToYa%2F%3Fmibextid%3DLQQJ4d" target="_blank">
             <FaFacebook className="text-2xl text-white hover:scale-125 transition-all duration-700 hover:rotate-360 bg-[#2525fd] rounded-sm flex h-7 w-7 p-1" />
           </Link>
-          <Link to="https://wa.me" target="_blank">
+          <Link to="https://api.whatsapp.com/message/O7OXIRLLBCPLM1?autoload=1&app_absent=0" target="_blank">
             <FaWhatsapp className="text-2xl text-white hover:scale-125 transition-all duration-700 hover:rotate-360 bg-[#08cf08] rounded-sm h-7 w-7 shadow-lg p-1" />
           </Link>
-          <Link to="https://www.instagram.com" target="_blank" >
+          <Link to="https://www.instagram.com/bestforpetoficial/?igsh=MXd2andhYjU2YzJ0eQ%3D%3D#" target="_blank" >
             <FaInstagram className="text-2xl text-white hover:scale-125 transition-all duration-700 hover:rotate-360 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-sm h-7 w-7 p-1" />
           </Link>
         </div>
