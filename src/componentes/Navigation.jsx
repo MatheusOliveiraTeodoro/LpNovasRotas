@@ -44,13 +44,13 @@ const Navigation = () => {
 
           {/* Ícones das redes sociais */}
           <div className="mt-auto flex space-x-6 justify-center">
-            <Link to="https://www.facebook.com" target="_blank" onClick={closeMenu}>
+            <Link to="https://www.facebook.com/bestforpetoficial?mibextid=LQQJ4d&rdid=wBGEhxyWDYZr10OI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1gh83cNnqjXtToYa%2F%3Fmibextid%3DLQQJ4d" target="_blank" onClick={closeMenu}>
               <FaFacebook className="text-3xl hover:text-blue-500 transition-all duration-300 hover:shadow-lg hover:scale-105 bg-[#2525fd] text-white p-1 rounded-full" />
             </Link>
-            <Link to="https://wa.me" target="_blank" onClick={closeMenu}>
+            <Link to="https://api.whatsapp.com/message/O7OXIRLLBCPLM1?autoload=1&app_absent=0" target="_blank" onClick={closeMenu}>
               <FaWhatsapp className="text-3xl hover:text-green-600 transition-all duration-300 hover:shadow-lg hover:scale-105 bg-[#08cf08] text-white p-1 rounded-full" />
             </Link>
-            <Link to="https://www.instagram.com" target="_blank" onClick={closeMenu}>
+            <Link to="https://www.instagram.com/bestforpetoficial/?igsh=MXd2andhYjU2YzJ0eQ%3D%3D#" target="_blank" onClick={closeMenu}>
               <FaInstagram className="text-3xl hover:text-pink-500 transition-all duration-300 hover:shadow-lg hover:scale-105  bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white p-1 rounded-full" />
             </Link>
           </div>
